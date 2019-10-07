@@ -6,11 +6,11 @@ void schMySQLManager::init()
 	mysql_init(&myCont);//初始化连接处理程序 
 	if (mysql_real_connect(&myCont, host, user, pswd, table, port, NULL, 0))
 	{//通过调用mysql_real_connect()连接到服务器 
-		cout << "connect succeed!" << endl;
+		cout << "MySQL connect succeed!" << endl;
 		mysql_query(&myCont, "SET NAMES GBK"); //设置编码格式,否则在cmd下无法显示中文  
 	}
 	else
-		cout << "connect failed!" << endl;
+		cout << "MySQL connect failed!" << endl;
 }
 
 void schMySQLManager::query(const char *sql)

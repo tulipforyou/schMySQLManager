@@ -126,11 +126,15 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="schMySQLManager.cpp" />
+    <ClCompile Include="stuManage.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="timeSch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="schMySQLManager.h" />
+    <ClInclude Include="stuManage.h" />
     <ClInclude Include="test.h" />
+    <ClInclude Include="timeSch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
